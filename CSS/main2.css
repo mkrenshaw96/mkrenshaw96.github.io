@@ -1,0 +1,57 @@
+@import 'variables.css';
+@import 'about.css';
+@import 'body.css';
+@import 'contact.css';
+@import 'footers.css';
+@import 'header.css';
+@import 'navbar.css';
+@import 'projects.css';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+
+.height {
+    height: 100vh;
+}
+
+.wrapper {
+    position: relative;
+    top: 55px;
+}
+
+
+.white {
+    color: white;
+}
+
+form {
+    width: 100%;
+}
+
+.logo {
+    width: 64px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+a {
+    color: inherit;
+}
+
+.paralax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
