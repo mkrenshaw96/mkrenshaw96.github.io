@@ -2,7 +2,7 @@
 @import 'about.css';
 @import 'body.css';
 @import 'contact.css';
-@import 'footers.css';
+/* @import 'footers.css'; */
 @import 'header.css';
 @import 'navbar.css';
 @import 'projects.css';
@@ -47,6 +47,7 @@ form {
 a {
     color: inherit;
 }
+
 
 .paralax {
     background-attachment: fixed;
