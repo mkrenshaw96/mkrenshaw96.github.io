@@ -4,7 +4,8 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:200,400&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:200,400&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./CSS/main2.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Michael Crenshaw</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style='outline: none;'>
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -32,7 +33,7 @@
   <div class='container height section1 back-img para'>
     <div class='wrapper'>
       <div class='row'>
-        <div class='col display-4'>Im Michael</div>
+        <div class='col display-4'>I'm Michael</div>
       </div>
       <div class='row'>
         <div class='col'>a dev student.</div>
@@ -40,7 +41,7 @@
     </div>
   </div>
 
-  <div class='container height back-img2 paralax' id='section2'>
+  <div class='container height back-img2' id='section2'>
     <div class='about-wrap wrapper'>
       <div class='row'>
         <div class='col display-4'>About Me</div>
@@ -48,17 +49,17 @@
       <div id='about-content'>
         <div class='row'>
           <div class='col-xl'>
-            <h5>I am currently a junior web developer in training at the Eleven Fifty Academy. I'm very passionate
-              about
-              great design and functionality with a minimalistic approach.</h5>
+            <h5>I am currently a junior full stack javascript web developer studying at the Eleven Fifty Academy. I'm a
+              highly self motivated and very passionate individual intersted in great design and functionality with a
+              minimalistic approach.</h5>
           </div>
-          <div class='col-xl'>
-            <h5>Influences lie within companies like Apple and Google for there simplistic but effienct
-              outlook on design and innovation. I have no prior experience but, I have always had interest in technology
-              and
-              coding specifically so I am
-              puttung my curiosity to use. You can find my resume <a href='./assets/Resume(2019).pdf'
-                download="./assets/Resume(2019).pdf"><span style='text-decoration: underline'>here.</span>
+          <div class='col-xl para2'>
+            <h5>My influences lie within companies like Apple, Google, and Facebook for there simplistic but effienct
+              outlook on design and innovation. I have experience using front end libraries like React, Materail UI, and
+              Bootstrap. I also have experience building complex back end api's and databases using Node.js, Express,
+              and Sequelize.
+              You can find my resume <a href='./assets/Resume(2019).pdf' download="./assets/Resume(2019).pdf"><span
+                  style='font-weight: 700; text-decoration: underline;'>here.</span></a>
             </h5>
           </div>
         </div>
@@ -66,7 +67,7 @@
     </div>
   </div>
 
-  <div class='container height back-img3 paralax' id='section3'>
+  <div class='container height back-img3' id='section3'>
     <div class='wrapper'>
       <div class='row'>
         <div class='col display-4 white'>Projects</div>
@@ -74,23 +75,50 @@
       <br>
 
       <div class='row'>
-        <div class='col-sm-4 white'><a href='https://michaelapiproject.firebaseapp.com/'><img
-              src="./assets/doggo_api_screen.png" class='color port' alt=""></a>Doggo API
+        <div class='col-sm-4 white'>
+          <h5> Fetch | An instagram
+            clone for dogs.</h5>
+          <a href='https://m-fetch.herokuapp.com/'><img src="./assets/fetch-screenshot.png" class='color port'
+              alt=""></a>
+          <br>
+          <p class='description'>An full fledged instagram clone made specifically for posting pictures of dogs. It was
+            built over a 4 week
+            period
+            created with a back end REST api using Node.js, Express, Sequelize, Postgres, PgAdmin 4, Bcryptjs,
+            JsonWebToken, AWS, and S3. The front end was built with the ReactJs library. All component except for one
+            are built with custom styling and styled to be responsive for both mobile and desktop. I took design
+            inspiration from the Instagram app as well as a few sources online and some of my own ideas.</p>
         </div>
 
-        <div class='col-sm-4 white'><a href='https://mkrenshaw96.github.io/staticLayout/'><img
-              src="./assets/Screen Shot 2019-05-20 at 12.18.38 PM.png" class='color port' alt=""></a>Netlfix |
-          Static
-          Layout</div>
+        <div class='col-sm-4 white'>
+          <h5>Doggo API | Vanilla JS Api fetching</h5>
+          <a href='https://michaelapiproject.firebaseapp.com/'><img src="./assets/doggo_api_screen.png"
+              class='color port' alt=""></a>
+          <p class='description'>This project was built with the dog api (https://thedogapi.com/). It works by
+            connecting to the api by a
+            vanilla javascript fetch and returning the data from the search in an array that can be paginated with the
+            arrow buttons that appear on the sides of the card component when there is more than one result present. A
+            picture of the breed also appear by a second fetch to a different api endpoint through string interpolation
+            so that it will match the breed of the displayed text.</p>
+        </div>
 
-        <div class='col-sm-4 white'><a href='https://codepen.io/__mkc/pen/BeypQX'><img
-              src="./assets/Screen Shot 2019-05-20 at 2.01.53 PM.png" class='color port' alt=""></a>CSS Creature
+        <div class='col-sm-4 white'>
+          <h5> Netlfix | Static Layout</h5>
+          <a href='https://mkrenshaw96.github.io/staticLayout/'><img
+              src="./assets/Screen Shot 2019-05-20 at 12.18.38 PM.png" class='color port' alt=""></a>
+          <p class='description'>A very simple Netflix layout clone to demonstrate knowledge of positioning element on a
+            webpage with css.
+            This
+            project was made over a period of a 4 days and was one of the first projects I had ever done involving web
+            developement and design. It mainly uses css flexbox to position the images as well as some css animation to
+            show the movie cards moving around on hover and transition.
+          </p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container contact height back-img4 paralax" id='section4'>
+  <div class="container contact height back-img4" id='section4'>
     <div class='wrapper'>
       <div class="container">
         <div class='row'>
@@ -101,7 +129,7 @@
             <div class="control-group">
               <div class="form-group">
                 <label>Name</label>
-                <input type="text" class="form-control" placeholder="Your Name" id="name" required
+                <input type="text" class="form-control" placeholder="Name" id="name" required
                   data-validation-required-message="Please enter your name" name="name">
                 <p class="help-block text-danger"></p>
               </div>
@@ -109,14 +137,14 @@
             <div class="control-group">
               <div class="form-group">
                 <label>Email Address</label>
-                <input type="email" class="form-control" placeholder="Your Email" id="email" required
+                <input type="email" class="form-control" placeholder="Email" id="email" required
                   data-validation-required-message="Please enter your email" name="_replyto">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group">
-                <textarea class="form-control" rows="7" placeholder="Your Message" id="message" required
+                <textarea class="form-control" rows="7" placeholder="Message" id="message" required
                   data-validation-required-message="Please leave a message" name="message"></textarea>
                 <p class="help-block text-danger"></p>
               </div>

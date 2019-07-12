@@ -12,12 +12,13 @@ html {
 }
 
 body {
-    font-family: 'Saira Condensed', sans-serif;
+    /* font-family: 'Saira Condensed', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 .height {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .wrapper {
@@ -55,4 +56,10 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+
+@media screen and (max-width: 575px) {
+    .description{
+        padding-bottom: 30vh;
+    }
 }
